@@ -1,3 +1,4 @@
+
 const theme = {
   colors: {
     primary: '#6200ee',
@@ -6,7 +7,7 @@ const theme = {
     success: '#135E01',
   },
   fonts: {
-    fontFamily: 'Roboto, sans-serif',
+    regular: 'Roboto, sans-serif',
   },
 };
 
