@@ -8,9 +8,18 @@ import logo from '../../assets/logo.svg';
 
 import restaurante from '../../assets/restaurante-fake.png';
 
-import { Card } from '../../components';
+import { Card, RestaurantCard } from '../../components';
 
-import { Container, Search, Carousel, Logo, Wrapper, Map, CarouselTitle } from './style';
+import {
+    Container,
+    Search,
+    Carousel,
+    Logo,
+    Wrapper,
+    Map,
+    CarouselTitle
+} from './style';
+
 
 const Home = () => {
     const [inputValue, setInputValue] = useState('');
@@ -42,12 +51,13 @@ const Home = () => {
                     </TextField>
                     <CarouselTitle>Na sua Área</CarouselTitle>
                     <Carousel {...settings}>
-                        <Card photo={restaurante} />
-                        <Card photo={restaurante} />
-                        <Card photo={restaurante} />
-                        <Card photo={restaurante} />
+                        <Card photo={restaurante} title="Padaria" />
+                        <Card photo={restaurante} title="Hamburgueria" />
+                        <Card photo={restaurante} title="Restaurante" />
+                        <Card photo={restaurante} title="Lanches" />
                     </Carousel>
                 </Search>
+                <RestaurantCard />
             </Container>
             <Map>
                 Teste
